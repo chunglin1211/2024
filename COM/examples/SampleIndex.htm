@@ -1,0 +1,120 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <LINK HREF="content3.css" REL="stylesheet" type="text/css" media="screen" title="default_screen">
+  <title>Navisworks API</title>
+</head>
+<body>
+
+
+<div id="menu">
+<a class="main" href="#auto">Automation</a>
+<a class="main" href="#plug">Plug-ins</a>
+<a class="main" href="#actx">ActiveX</a>
+</div>
+
+<div id="content">
+
+<h1>Navisworks COM API Examples</h1>
+
+<p>Included here is all currently available examples of the Navisworks
+  COM API.</p>
+
+<a name="auto"></a><h2>Automation</h2>
+<ul>
+<li>
+<a href="Auto/AutoLaunchExample">AutoLaunchExample</a>: Basic Automation - C# Application<br>
+This is a simple application that shows basic launching of Navisworks through API automation and then have it load a model. It also demonstartes how to make sure correct copy of roamer is registered if there are side by side installs.
+</li>
+<li>
+<a href="Auto/AutoSelectionExample">AutoSelectionExample</a>: Manipulating Selections - C# Application<br>
+This application demonstrates how to keep track of objects selected in the Navisworks interface and manipulate the selection. (e.g. making objects hidden or changing colour)
+</li>
+<li>
+<a href="Auto/AutoClashExample">AutoClashExample</a>: Automatic Clash - C# Application<br>
+A demonstration of automating the process of running pre-defined clash tests in a model and generating a report of the results.
+</li>
+<li>
+<a href="Auto/AutoSimpleScriptExample">AutoSimpleScriptExample</a>: Script Automation - VB Script<br>
+This script file shows how to run Navisworks automation through simple VB Script files.
+</li>
+<li>
+<a href="Auto/AutoUserPropsExample">AutoUserPropsExample</a>: User Defined Properties - C# Application<br>
+Example of using API automation to add user defined properies to Navisworks.
+</li>
+<li>
+<a href="Auto/AutoDrivePluginExample">AutoDrivePluginExample</a>: Driving IO Plugins - C# Application<br>
+Example of using API automation drive IO Plugins.
+</li>
+<li>
+<a href="Auto/AutoPublishScriptExample">AutoPublishScriptExample</a>: Publishing Files via Script Automation - VB Script<br>
+This script file shows how to publish files using VB Script.
+</li>
+</ul>
+
+<a name="plug"></a><h2>Plug-ins</h2>
+<p>Before attempting to use plug-ins, make sure to read <a href="PluginReadme.txt">these included notes</a><p>
+<ul>
+<li>
+<a href="Plugin/PluginClashRuleExample">PluginClashRuleExample</a>: Clash Ignore Rule - C# COM DLL<br>
+Example of using a plugin to define a custom clash detective ignore rule. This plugin allows you to specify that any clashes should be ignored when found between two user defined layers.
+</li>
+<li>
+<a href="Plugin/PluginExportExample">PluginExportExample</a>: Exporter - C# COM DLL<br>
+A set of two export plugin examples, one showing how to export a list of viewpoint names into a CSV file, the other generating a HTML report of Clash Detective results.
+</li>
+<li>
+<a href="Plugin/PluginContextMenuLauncherExample">PluginContextMenuLauncherExample</a>: Context Menu Launcher - C# COM DLL<br>
+A very simple plugin that adds an extra item to the Navisworks context menu when right-clicking on an object in Roamer. This extra option allows you to launch Notepad automatically.
+</li>
+<li>
+<a href="Plugin/PluginPropertyDatabaseExample">PluginPropertyDatabaseExample</a>: Property Database Link - C# COM DLL<br>
+A property plugin that reads data from a seperate database and shows that in the Navisworks property dialog. To use this example the included readme file is essential reading.
+</li>
+<li>
+<a href="Plugin/PluginSimpleExample">PluginSimpleExample</a>: Simple Plugin - C# COM DLL<br>
+Simplest plugin that can act as boiler plate code for plugin development.
+</li>
+</ul>
+
+<a name="actx"></a><h2>ActiveX</h2>
+Note: On 64bit OS these examples wont build unless you have manually registered a dummy 32bit version of the Integrated ActiveX controls. See 'COM Interface.pdf' for more details.  
+<ul>
+<li>
+<a href="ActiveX/ActiveXSnapShotExample">ActiveXSnapShotExample</a>: Snapshot - C# Application<br>
+An embedded ActiveX control allows the user to navigate around a model taking "snap shots" of specific views that can be viewed later or saved as BMP images.
+</li>
+<li>
+<a href="ActiveX/ActiveXLocaleSwitcherExample">ActiveXLocaleSwitcherExample</a>: Locale Switcher - C# Application<br>
+Simple application showing how to switch between languages of the menus in the ActiveX control.
+</li>
+<li>
+<a href="ActiveX/ActiveXFindExample">ActiveXFindExample</a>: Find - C# Application<br>
+An example of how to use the powerful but tricky find function, through the ActiveX control.
+</li>
+<li>
+<a href="ActiveX/ActiveXDumpStructureExample">ActiveXDumpStructureExample</a>: Dump Structure - C# Application<br>
+This application uses the ActiveX control to produce a report of the entire structure of the loaded model.
+</li>
+<li>
+<a href="ActiveX/ActiveXSimpleExample">ActiveXSimpleExample</a>:
+Simple ActiveX Usage - C# Application<br>
+This application shows simple usage of the ActiveX control embedded
+inside a C# WinForms .NET application.
+</li>
+<li>
+  <!--
+<a href="ActiveX/ActiveXWebpageExample/ActiveX.html">ActiveXWebpageExample</a>:
+ActiveX usage on a web page - HTML Application<br>
+Demonstrates how to embed the ActiveX control on a webpage.
+</li>
+-->
+</ul>
+
+
+
+</div>
+
+</body>
+</html>

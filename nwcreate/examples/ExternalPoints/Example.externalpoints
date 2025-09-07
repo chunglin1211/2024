@@ -1,0 +1,13 @@
+# Minimum point of bounding box
+10 10 10
+
+# Maximum point of bounding box
+11 11 11
+
+# Offset to position points. Want single precision geometry data
+# as close to origin as possible, with double precision offset to move
+# to real location.
+100 100 100
+
+# Number of points along each axis (power of 2)
+16

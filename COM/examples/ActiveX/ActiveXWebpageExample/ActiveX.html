@@ -1,0 +1,213 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<TITLE>
+Autodesk Navisworks Redistributable ActiveX Control
+</TITLE>
+<STYLE TYPE="text/css">
+p {
+   font-size : 18px ;
+   font-family : Verdana ;
+}
+
+tr.header {
+	background: black;
+	color: white;
+}
+
+tr.header td {
+	padding: 5px;
+	text-align: center;
+	font-size: 16pt;
+	font-weight: bold;
+}
+
+tr.footer {
+	background: black;
+	color: white;
+}
+
+tr.footer td {
+	padding: 5px;
+	font-size: 12pt;
+	text-align: center;
+}
+
+td.body {
+	text-align: center;
+	width: 586px;
+	height: 550px;
+}
+
+td.heading {
+	background: gray;
+	color: white;
+	text-align: center;
+}
+
+tr.buttons {
+	height: 2.5em;
+}
+
+tr.buttons td {
+	text-align: center;
+}
+</STYLE>
+
+
+<script language="VBScript">
+
+	public sub btnView_Clicked(cmd_ndx)
+
+		with NWControl01.state
+
+			.ApplyView .SavedViews(cmd_ndx)
+
+		end with
+
+	end sub
+
+
+
+	public sub btnViewAll_Clicked()
+
+		NWControl01.state.ViewAll
+		NWControl01.state.HiddenItemsResetAll
+
+	end sub
+
+
+
+	public sub btnNav_Clicked(nmd_ndx)
+
+		NWControl01.state.CurrentView.ViewPoint.Paradigm = (nmd_ndx)
+
+	end sub
+
+	public sub btnLinkOn_Clicked()
+
+		NWControl01.state.URLsEnabled = TRUE
+
+	end sub
+
+	public sub btnLinkOff_Clicked()
+
+		NWControl01.state.URLsEnabled = FALSE
+
+	end sub
+
+	public sub btnLightOff_Clicked()
+
+		NWControl01.state.CurrentView.ViewPoint.Lighting = 0 
+
+	end sub
+
+	public sub btnLightOn_Clicked()
+
+		NWControl01.state.CurrentView.ViewPoint.Lighting = 3
+
+	end sub
+
+</script>
+
+</HEAD>
+
+<body>
+
+<p align=center>
+
+<table border="0" width="850">
+
+<tr class="header">
+    <td colspan="3">Autodesk Navisworks ActiveX Control</td>
+</tr>
+
+<tr>
+    <td class="heading">Saved Views</td>
+	
+    <td class="body" rowspan="21">
+    	<OBJECT ID="NWControl01"
+				CLASSID="CLSID:"
+				CODEBASE="..\..\..\bin\Navisworks ActiveX Redistributable x86 Setup.exe">
+
+	    <PARAM NAME="_cx" VALUE="14000">
+    	<PARAM NAME="_cy" VALUE="12000">
+    	<PARAM NAME="SRC" VALUE="..\..\gatehouse.nwd">
+
+		</OBJECT>
+    </td>
+	
+    <td class="heading" width=132 bgcolor='#99ccff'>Navigation Modes</td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 1" title="View 1"
+  onclick="btnView_Clicked(1)"/></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Walk" title="Walk" onclick="btnNav_Clicked(3)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 2" title="View 2" onclick="btnView_Clicked(2)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Look Around" title="Look Around" onclick="btnNav_Clicked(1)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 3" title="View 3"
+  onclick="btnView_Clicked(3)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Zoom" title="Zoom" onclick="btnNav_Clicked(7)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 4" title="View 4"
+  onclick="btnView_Clicked(4)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Zoom Box" title="Zoom Box" onclick="btnNav_Clicked(12)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 5" title="View 5"
+  onclick="btnView_Clicked(5)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Pan" title="Pan" onclick="btnNav_Clicked(8)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 6" title="View 6"
+  onclick="btnView_Clicked(6)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Orbit" title="Orbit" onclick="btnNav_Clicked(11)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 7" title="View 7"
+  onclick="btnView_Clicked(7)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Examine" title="Examine" onclick="btnNav_Clicked(2)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 8" title="View 8"
+  onclick="btnView_Clicked(8)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Fly" title="Fly" onclick="btnNav_Clicked(4)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnView value="View 9" title="View 9"
+  onclick="btnView_Clicked(9)"></td>
+    <td><input type=button STYLE="WIDTH:115" name=btnNav value="Turntable" title="Turntable" onclick="btnNav_Clicked(5)"></td>
+</tr>
+
+<tr class="buttons">
+    <td><input type=button STYLE="WIDTH:115" name=btnViewAll value="View All" title="View All"
+  onclick="btnViewAll_Clicked()"></td>
+    <td></td>
+</tr>
+
+<tr class="footer">
+    <td colspan="3">(C) Copyright 2008 by Autodesk Inc.</td>
+</tr>
+
+
+
+</body>
+</table>
+</p>
+</HTML>

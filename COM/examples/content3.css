@@ -1,0 +1,542 @@
+body {
+        /*make the background scroll with the window*/
+	background-attachment : scroll;
+
+	background-image : url(bg7.png);
+	background-repeat : no-repeat;
+	background-position : inherit;
+	background-color : White;
+	font-family : arial, sans-serif;
+	margin : 20px;
+	color: rgb(7,60,106);
+	text-align : justify;
+}
+
+/* reduce the size of the superscript type as it can push the current line down otherwise */
+sup {
+    font-size : smaller;
+    color: rgb(70,184,46);
+}
+
+table {
+   /* Code for a drop shadow... only works in IE */
+   FILTER: progid:DXImageTransform.Microsoft.dropShadow( Color=DEE7F4,offX=-5,offY=5,positive=true);
+   background-color : rgb(247,247,255);
+   border : 2px solid #DEE7F4;
+   margin-bottom : 1em;
+   margin-top : 1em;
+}
+
+form table {
+   FILTER: progid:DXImageTransform.Microsoft.dropShadow( Color=DEE7F4,offX=0,offY=0,positive=true);
+}
+
+th {
+   vertical-align : top;
+   border : 0px;
+   padding : 0.5em;
+   text-align : center;
+   font-weight : bolder;
+}
+
+td {
+   vertical-align : top;   
+   border : 0px;
+   border-left : 1px solid #DEE7F4;
+   padding : 0.5em;
+}
+
+td:first-child { 
+   border : 0px;
+}
+
+
+h3
+{
+   font-size:medium;
+   clear : left;
+}
+
+h2
+{
+   font-size:large;
+   clear : left;
+}
+
+h1
+{
+   font-size:large;
+   text-transform: uppercase;
+   clear : left;
+}
+
+img {
+   float : right;
+   margin-bottom : 1em;
+   margin-left : 1em;
+}
+
+/* when you have large images close to each other -- avoids nesting the image */
+img.big, img.BIG, img.Big {
+   clear : right;
+}
+
+img.banner, img.BANNER, img.Banner {
+   margin-left : 0em;
+   float : none;
+}
+
+dt {
+   font-weight : bold;
+}
+
+div.box, div.BOX, div.Box {
+   float : right;
+   clear : right;
+   padding : 1.5em;
+   margin-left : 1em;
+   width : 35%;
+   background-color: rgb(216,228,244);
+}
+
+/* phone numbers are in red see on the reseller pages */
+span.phone {
+   color: #f00;
+}
+
+ol {
+   list-style-type: decimal 
+}
+
+ol ol { 
+   list-style-type: lower-alpha 
+}
+
+ol ol ol { 
+   list-style-type: lower-roman 
+}
+
+table.grid td {
+  text-align : center;
+  vertical-align : top;
+  background-color : white;
+  padding : 0.5em;
+   }
+
+table.grid th {
+  font-weight : lighter;
+  padding : 0.5em;
+  color : black;
+  background-color : #eeffff;
+  border : gray;
+}
+
+table.grid th.vertical {
+  background-color : #eeffff;
+  vertical-align : top;
+  font-style : italic;
+  text-align : right;
+  font-weight:bold;
+}
+
+div.code, div.CODE, div.Code {
+  margin-bottom : 1em;
+  padding : 1em;
+  background-color: #f2f2ff;
+  border : dashed gray;
+  border-width : 1px
+}
+
+code {
+  font-size : medium;
+}
+
+img.icon, img.ICON, img.Icon {
+  float:left;
+  margin-left:0em;
+  margin-right:1em;
+}
+
+blockquote {
+   text-align : justify;
+   font-style : italic;
+}
+
+p.quoteattrib, p.QUOTEATTRIB {
+   text-align : right;
+   font-style : italic;
+}
+
+embed {
+   float : right;
+   clear : right;
+   margin-left : 1em;
+   margin-bottom : 1em;
+}
+
+/* Product colour schemes */
+
+#clash_detective, #CLASH_DETECTIVE {
+   color : rgb(217,0,38);
+}
+
+#roamer, #ROAMER {
+   /*??? need philip to find out this one... this is actually a table backgound 
+   color : rgb(216,228,244);
+   */
+}
+
+#publisher, #PUBLISHER {
+   color : rgb(0,82,50);
+}
+
+#timeliner, #TIMELINER {
+   color : rgb(56,0,116);
+}
+
+#navisworks, #NAVISWORKS {
+   color : rgb(7,60,106);
+}
+
+#headline_green, #HEADLINE_GREEN
+   color : rgb(70,184,46);
+}
+
+/* CSS 2 */
+
+q:before { content: open-quote }
+q:after  { content: close-quote }
+blockquote p:before { content: open-quote }
+blockquote p:after  { content: close-quote }
+
+li.bullet { list-style-type: disc }
+
+ul li { list-style-image: url("../images/Navisworks3symbol_bulletpoint.png");
+   padding-bottom : 1em; }
+
+ul ul li { list-style-image : none; }
+
+
+
+
+/* Old crapola*/
+
+div.HOWTO, div.howto { 
+   background : #eeeeee; 
+   border-style : solid; 
+   border-width : 1px; 
+   border-color : #cccccc; 
+   padding : 1.5em;
+   margin-top : .5em;
+   margin-bottom : .5em;
+   FILTER: alpha(opacity=80, style=0);
+}
+
+div.QUESTIONINFO, div.questioninfo {
+   background : #ffffcc; 
+   border-style : solid; 
+   border-width : 1px; 
+   border-color : #cccccc; 
+   padding : 1.5em; 
+   FILTER: alpha(opacity=80, style=0);
+}
+
+/* bond menu pasted in below */
+
+/* main style sheet "undos" */
+#Content a {
+clear : none;
+}
+
+#Menu a {
+text-decoration : none; 
+text-align : left;
+}
+/* end */
+
+body {
+	margin:0px;
+	padding:0px;
+	}
+
+#Menu a {
+	font-size:small;
+	font-family:arial, sans-serif;
+	}
+
+div.searchbox {
+	position:absolute;
+	top:220px;
+	left:0px;
+	width:193px;
+	padding:0px;
+	border: 0px solid #6699cc;
+	margin:0px;
+}
+
+#Menu {
+	margin-right : 1em;
+        margin-bottom : 1em;
+	position:absolute;
+	top:255px;
+	left:0px;
+	width:163px;
+        padding:0px;
+	border: 0px solid #6699cc;
+	margin:0px;
+	}
+
+#Content {
+	font-size : small;
+	margin-left : 190px;
+padding : 30px;
+padding-top : 180px;
+	}
+
+#sub_menu {
+	position:relative;
+	top:0px;
+	left:5px;
+	width:135px;
+	padding:2px;
+	border: 0px solid #FFFFFF;
+	border: 0px;
+	
+	}
+
+#sub_sub_menu {
+	position:relative;
+	top:0px;
+	left:5px;
+	width:130px;
+	padding:2px;
+border: 0px solid #FFFFFF;
+	}
+
+a, a:visited, a sup {
+   text-decoration : none;
+   color : blue;
+}
+
+a:hover
+{
+   text-decoration : underline;
+   color : blue;
+}
+
+#you_are_here {
+/*	font-style : italic;*/
+	background-color : rgb(70,184,46);
+	color:black;
+	}
+
+
+a.main_you_are_here, a.main_you_are_here:visited {
+	color:black;
+	display : block;
+        padding:10px;
+/*        padding-top:15px;*/
+	margin-left:10px;
+	width:163px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+	background-color : rgb(70,184,46);
+	}
+
+a.sub_you_are_here, a.sub_you_are_here:visited {
+	color:black;
+        display : block;
+        padding:10px;
+        padding-left:20px;
+	margin-left:10px;
+	width:143px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+        border-left:10px solid rgb(216,228,244);
+	background-color : rgb(90,204,66);
+	}
+
+a.sub_sub_you_are_here, a.sub_sub_you_are_here:visited {
+	color:black;
+        display : block;
+        padding:10px;
+        padding-left:30px;
+	margin-left:10px;
+	width:133px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+        border-left:10px solid rgb(216,228,244);
+	background-color : rgb(110,224,86);
+	}
+
+a.main, a.main:visited {
+	color: rgb(7,60,106);
+	background-color: rgb(216,228,244);
+	display : block;
+        padding:10px;
+/*        padding-top:15px;*/
+	margin-left:10px;
+	width:163px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+}
+
+a.main:hover, a.main_you_are_here:hover {
+	color: #ffffff;
+	background-color: #6699cc;
+	display : block;
+        padding:10px;
+/*	padding-top:15px;*/
+	margin-left:10px;
+	width:163px;
+}
+
+
+a.sub, a.sub:visited {
+	color: rgb(7,60,106);
+	background-color: rgb(247,247,255);
+        display : block;
+        padding:10px;
+        padding-left:20px;
+	margin-left:10px;
+	width:143px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+        border-left:10px solid rgb(216,228,244);
+}
+
+a.sub:hover, a.sub_you_are_here:hover {
+	color: #ffffff;
+	background-color: #6699cc;
+        display : block;
+        padding:10px;
+        padding-left:20px;
+	margin-left:10px;
+	width:143px;
+}
+
+
+a.sub_sub, a.sub_sub:visited  {
+	color: rgb(7,60,106);
+	background-color: white;
+        display : block;
+        padding:10px;
+        padding-left:30px;
+	margin-left:10px;
+	width:133px;
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=70, finishX=163, startY=0, finishY=0);
+        border-left:10px solid rgb(216,228,244);
+}
+
+
+a.sub_sub:hover, a.sub_sub_you_are_here:hover {
+	color: #ffffff;
+	background-color: #6699cc;
+        display : block;
+        padding:10px;
+        padding-left:30px;
+	margin-left:10px;
+	width:133px;
+}
+
+/* Breadcrumbs bar */
+div.breadcrumbs {
+        FILTER: alpha(style=1, opacity=80, finishOpacity=0, startX=0, finishX=0, startY=50, finishY=100);
+	color: rgb(7,60,106);
+	background-color: rgb(216,228,244);
+	padding:6px;
+	padding-top:3px;
+	padding-bottom:20px;
+	width:70%;
+	float:left;
+}
+
+div.similar {
+	display : none;
+/*
+	padding:6px;
+	padding-top:3px;
+	float:right
+*/
+	}
+
+
+ul {
+ margin-left:2em;
+}
+
+
+div.footer, div.advanced_style, div.basic_style {
+   clear:both;
+   text-align:center;
+   font-size:smaller
+}
+
+div.basic_style {
+   display:none;
+}
+
+pre
+{
+   font-size : larger;
+}
+
+
+/* Product colour schemes - backgrounds */
+
+#clash_detective_back, #CLASH_DETECTIVE_BACK {
+   background : rgb(217,0,38);
+}
+
+#roamer_back, #ROAMER_BACK {
+   /*??? need philip to find out this one... this is actually a table backgound 
+   background : rgb(216,228,244);
+   */
+}
+
+#publisher_back, #PUBLISHER_BACK {
+   background : rgb(0,82,50);
+}
+
+#timeliner_back, #TIMELINER_BACK {
+   background : rgb(56,0,116);
+}
+
+#navisworks_back, #NAVISWORKS_BACK {
+   background : rgb(7,60,106);
+}
+
+#headline_green_back, #HEADLINE_GREEN_BACK {
+   background : rgb(70,184,46);
+}
+
+#publisher_wash { 
+   background : rgb(148,165,165)
+}
+
+#freedom_wash { 
+   background : rgb(181,214,156)
+}
+
+#roamer_wash {
+   background : rgb(148,181,222)
+}
+
+#timeliner_wash {
+   background : rgb(165,132,181)
+}
+
+#clash_detective_wash {
+   background : rgb(231,148,132)
+}
+
+img.resellerlogo {
+   clear:right;
+   margin-right :150px;
+}
+
+div.reseller {
+   clear:left;
+   margin-bottom:3em;
+}
+
+div.reseller h3 {
+   text-align:left;
+}
+
+span.mandatory { color: red }
